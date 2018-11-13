@@ -37,6 +37,7 @@
           <tr>
             <td> <?php echo $key['nombre']; ?> </td>
             <td> <?php echo $key['apellido']; ?> </td>
+            <td> <a href="editar.php?id=<?php echo $key['id'] ?>">Editar</a> </td>
           </tr>
         <?php
         }

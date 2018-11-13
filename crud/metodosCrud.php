@@ -17,6 +17,15 @@
       return $result = mysqli_query($conexion,$sql);
     }
 
+    public function actualizarDatos($datos){
+      $cx = new conectar();
+      $conexion = $cx->conexion();
+
+      $sql = "UPDATE t_persona SET nombre='$datos[0]', apellido='$datos[1]' WHERE id='$datos[2]'";
+      return $result = mysqli_query($conexion, $sql);
+
+    }
+
 
   }
 

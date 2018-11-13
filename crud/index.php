@@ -11,6 +11,16 @@
   </head>
   <body>
 
+    <form action="procesos/insertar.php" method="post">
+      <label for="">Nombre: </label>
+      <input type="text" name="txtnombre" value="">
+      <p></p>
+      <label for="">Apellido: </label>
+      <input type="text" name="txtapellido" value="">
+      <p></p>
+      <button>Agregar</button>
+    </form>
+
     <table>
       <tr>
         <td>Nombre</td>

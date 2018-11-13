@@ -26,6 +26,15 @@
 
     }
 
+    public function eliminarDatos($id){
+      $cx = new conectar();
+      $conexion = $cx->conexion();
+
+      $sql = "DELETE FROM t_persona WHERE id='$id'";
+      return $result = mysqli_query($conexion, $sql);
+
+    }
+
 
   }
 
